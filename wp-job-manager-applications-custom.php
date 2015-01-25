@@ -66,12 +66,12 @@ class My_Custom_Job_Manager_Application_Content {
 	 * @return void
 	 */
 	private function setup_actions() {
-	    add_filter( 'job_application_form_fields', array( $this, 'form_fields' ) );
-		add_filter( 'job_application_form_posted_meta', array( $this, 'update_application_data' ), 10, 2 );
-	    add_filter( 'job_application_content', array( $this, 'custom_content' ) );
-		//add_filter( 'job_manager_job_listing_data_fields', array( $this, 'job_listing_data_fields' ), 15 );
+	    	add_filter( 'job_application_form_fields', array( $this, 'form_fields' ) );
+	    	add_filter( 'job_application_form_posted_meta', array( $this, 'update_application_data' ), 10, 2 );
+	    	add_filter( 'job_application_content', array( $this, 'custom_content' ) );
+	    	//add_filter( 'job_manager_job_listing_data_fields', array( $this, 'job_listing_data_fields' ), 15 );
 
-		$this->load_textdomain();
+	    	$this->load_textdomain();
 	}
 
 
